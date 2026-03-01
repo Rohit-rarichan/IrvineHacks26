@@ -116,7 +116,7 @@ http://localhost:5173
 The React frontend is deployed on Vercel.
 
 Live URL:
-https://irvine-hacks26.vercel.app?_vercel_share=Ne8p9v0LcEkGOkzvurbwjIeLBYKARTHs
+https://irvine-hacks26.vercel.app/?_vercel_share=Ne8p9v0LcEkGOkzvurbwjIeLBYKARTHs
 
 ### Backend (Render)
 
