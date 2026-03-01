@@ -1,7 +1,7 @@
 export const MAPBOX_TOKEN =
   'pk.eyJ1Ijoicm9oaXRzcHJvaiIsImEiOiJjbW02cXI1bG8wa3JoMndxM24xZWZibGN4In0.qlSno2dqONQ7rbsK9pBjQQ'
 
-export const API_BASE = 'http://localhost:8000'
+export const API_BASE = 'https://neighborhoodfit-api.onrender.com'
 
 export const MOCK_HOMES = [
   { home_id:1,  lat:33.680, lon:-117.800, dist_to_freeway:0.20, dist_to_major_road:0.10, dist_to_park:0.30, poi_count_500m:12, dist_to_industrial:0.5, light_pollution_score:0.80, quiet_score:0.82, green_score:0.74, activity_score:0.45, light_score:0.30 },
