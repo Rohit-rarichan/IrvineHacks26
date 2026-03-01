@@ -1,11 +1,8 @@
-# venv
 venv/
-
-# macOS
 .DS_Store
-
-# VS Code settings
 .vscode/
-
-# Temporary / cache files
 cache/
+__pycache__/
+*.pyc
+.env
+*.db
