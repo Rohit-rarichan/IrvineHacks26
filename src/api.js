@@ -6,7 +6,7 @@ export async function fetchHomes() {
     if (!res.ok) throw new Error('Bad response')
     return await res.json()
   } catch {
-    console.warn('[HomeScore] /homes unreachable — using mock data')
+    console.warn('[NeighborhoodFit] /homes unreachable — using mock data')
     return MOCK_HOMES
   }
 }
@@ -26,7 +26,7 @@ export async function fetchRankedHomes(homes, quiet, green, activity, light) {
     if (!res.ok) throw new Error('Bad response')
     return await res.json()
   } catch {
-    console.warn('[HomeScore] /score unreachable — scoring locally')
+    console.warn('[Neighborhood] /score unreachable — scoring locally')
     return computeLocalRank(homes, quiet, green, activity, light)
   }
 }

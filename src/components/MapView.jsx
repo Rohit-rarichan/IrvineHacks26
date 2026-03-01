@@ -38,7 +38,7 @@ export default function MapView({ homes, rankedHomes, activeId, setActiveId }) {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
-      style: 'mapbox://styles/mapbox/dark-v11',
+      style: 'mapbox://styles/mapbox/streets-v12',
       center: [-117.800, 33.680],
       zoom: 12.5,
       attributionControl: false,
@@ -80,8 +80,8 @@ export default function MapView({ homes, rankedHomes, activeId, setActiveId }) {
         const dot = document.createElement('div')
         dot.id = `mdot-${home.home_id}`
         dot.style.cssText = `
-          width:10px;height:10px;border-radius:50%;
-          background:#5b6278;border:2px solid #0b0e14;
+          width:14px;height:14px;border-radius:50%;
+          background:#11472f;border:3px solid #ffffff;box-shadow:0 0 0 2px #11472f;
           transition:transform 0.2s,box-shadow 0.2s,width 0.3s,height 0.3s;
         `
 
@@ -141,8 +141,10 @@ export default function MapView({ homes, rankedHomes, activeId, setActiveId }) {
       if (!entry) return
       const { dot, rankEl } = entry
       const color = scoreColor(home.fit_score ?? 0)
-      const size  = i < 3 ? '14px' : '10px'
-      dot.style.background = color
+      const size  = i < 3 ? '20px' : '14px'
+      dot.style.background = '#11472f'
+      dot.style.border = '3px solid #ffffff'
+      dot.style.boxShadow = '0 0 0 2px #11472f'
       dot.style.width       = size
       dot.style.height      = size
       rankEl.textContent    = `#${i + 1}`

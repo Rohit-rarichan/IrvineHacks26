@@ -17,6 +17,11 @@ function Header({ homeCount }) {
           <option>Newport Beach, CA</option>
           <option>Santa Ana, CA</option>
           <option>Anaheim, CA</option>
+          <option>Fullerton, CA</option>
+          <option>Garden Grove, CA</option>
+          <option>Hunington, CA</option>
+          <option>Lake Forest, CA</option>
+          <option>Orange, CA</option>
         </select>
       </div>
       <div className="flex items-center gap-2">
